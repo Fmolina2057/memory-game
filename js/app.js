@@ -2,11 +2,17 @@
 
 function doCardsMatch(card1, card2, node1, node2){
     setTimeout(function(){
-       node1.classlist.remove('flip');
-       node2.classlist.remove('flip');
-       card1.flipped = false;
-       card2.flipped = false;
-    } 1000;    
+        node1.classlist.remove('flip');
+        node2.classlist.remove('flip');
+    }, 1000);
+        
+    if(card1.icon === card2.icon){
+        node1.classList.add('match');
+        node2.classList.add('match');
+    }
+    else
+        card1.flipped = false;
+        card2.flipped = false;
 }
 
 var thisNode, thisCard;
@@ -60,4 +66,3 @@ window.addEventListener('load', function(){
 
     gameBoard.addEventListener('click', cardClick);
 });
- 

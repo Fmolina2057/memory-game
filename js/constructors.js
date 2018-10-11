@@ -1,6 +1,6 @@
 
 
-.'use strict';
+'use strict';
 
 var Card = function(icon) {
     this.icon = icon;
