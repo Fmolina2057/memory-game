@@ -2,13 +2,12 @@
   box-sizing: border-box;
 }
 
-
 .deck {
   list-style: none;
   /* background-color: rgb(27, 168, 121); */
   background: linear-gradient(140deg, rgb(17, 228, 157), rgb(240, 19, 192));
   width: 450px;
-  height: 450px;
+  height: 450px;    
   border-radius: 20px;
   margin: 0 auto;
   padding: 5px;
@@ -37,14 +36,9 @@ padding-top: 1em;
 
 .match {
   background-color: rgb(20, 224, 129);
+  cursor: default;
+  font-size: 2em;
 }
-
-
-
-
-
-
-
 
 @font-face {
   font-family: 'icomoon';

@@ -2,18 +2,22 @@
 
 function doCardsMatch(card1, card2, node1, node2){
     setTimeout(function(){
-        node1.classlist.remove('flip');
-        node2.classlist.remove('flip');
+        node1.classList.remove('flip');
+        node2.classList.remove('flip');
     }, 1000);
         
     if(card1.icon === card2.icon){
         node1.classList.add('match');
         node2.classList.add('match');
     }
-    else
+    else {
         card1.flipped = false;
         card2.flipped = false;
+    }
 }
+
+
+
 
 var thisNode, thisCard;
 var totalClicks = 0;
